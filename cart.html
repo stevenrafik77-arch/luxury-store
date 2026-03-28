@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات | Luxury Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Luxury<span>Store</span></a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="men.html">رجالي</a></li>
+                    <li><a href="women.html">نسائي</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" id="main-search" placeholder="ابحث عن الفخامة...">
+                <div id="search-results-container" class="search-results"></div>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <span id="cart-count">0</span>
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="cart-container container reveal active">
+        <h2 class="section-title">سلة المشتريات</h2>
+        
+        <div id="cart-empty-msg" style="display:none; text-align:center; padding: 50px;">
+            <p>سلتك فارغة حالياً..</p>
+            <a href="index.html#products" class="btn-gold" style="margin-top:20px;">العودة للتسوق</a>
+        </div>
+
+        <div id="cart-wrapper">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>المنتج</th>
+                        <th>السعر</th>
+                        <th>إجراء</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-body"></tbody>
+            </table>
+            <div class="cart-summary">
+                <h3>الإجمالي: <span id="cart-total-price">0</span> ر.س</h3>
+                <div class="cart-actions">
+                    <a href="index.html" class="btn-gold secondary">العودة للتسوق</a>
+                    <button class="btn-gold" onclick="alert('شكراً لثقتك! تم استلام طلبك.')">إتمام الشراء</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

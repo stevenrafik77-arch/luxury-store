@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Store | متجر الفخامة</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- إضافة خطوط Google Fonts: Cairo للعربية و Cinzel للشعار -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <!-- الشعار (Logo) -->
+            <div class="logo">
+                <a href="#">Luxury<span>Store</span></a>
+            </div>
+
+            <!-- روابط التنقل (Navigation) -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#categories">الأقسام</a></li>
+                    <li><a href="#products">المتجر</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" id="main-search" placeholder="ابحث عن الفخامة...">
+                <div id="search-results-container" class="search-results"></div>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <span id="cart-count">0</span>
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1>أناقة تليق بالملوك</h1>
+                <p>اكتشف تشكيلة الموسم الحصرية من Luxury Store حيث تجتمع الجودة العالية مع أرقى التصاميم الملكية.</p>
+                <a href="#products" class="btn-gold">اكتشف المجموعة</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title reveal">أقسامنا الفاخرة</h2>
+            <div class="category-grid">
+                <a href="men.html" class="category-card reveal">
+                    <div class="category-img" style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071');"></div>
+                    <div class="category-overlay">
+                        <h3>رجالي</h3>
+                        <span>مجموعة النخبة</span>
+                    </div>
+                </a>
+                <a href="women.html" class="category-card reveal">
+                    <div class="category-img" style="background-image: url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=80&w=2070');"></div>
+                    <div class="category-overlay">
+                        <h3>نسائي</h3>
+                        <span>أناقة ملكية</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2 class="section-title reveal">أحدث التصاميم الملكية</h2>
+        <div class="container product-grid">
+            <!-- منتج 1 -->
+            <div class="product-card reveal" data-id="1">
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=1974" alt="ساعة ملكية" class="product-image">
+                <h3>ساعة النخبة الذهبية</h3>
+                <p class="price">4,200 ر.س</p>
+                <button class="add-to-cart">إضافة للسلة</button>
+            </div>
+            <!-- منتج 2 -->
+            <div class="product-card reveal" data-id="2">
+                <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?q=80&w=2000" alt="قلم فاخر" class="product-image">
+                <h3>قلم كلاسيكي مطلي بالذهب</h3>
+                <p class="price">950 ر.س</p>
+                <button class="add-to-cart">إضافة للسلة</button>
+            </div>
+            <!-- منتج 3 -->
+            <div class="product-card reveal" data-id="3">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070" alt="خاتم عقيق" class="product-image">
+                <h3>خاتم عقيق يماني فاخر</h3>
+                <p class="price">1,500 ر.س</p>
+                <button class="add-to-cart">إضافة للسلة</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
